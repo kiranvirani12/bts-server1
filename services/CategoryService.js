@@ -89,7 +89,6 @@ class CategoryService {
       if (categoryCheckError) {
         return next(categoryCheckError);
       }
-      console.log('result==', categoryCheckResult)
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
       res.end(JSON.stringify(categoryCheckResult));
